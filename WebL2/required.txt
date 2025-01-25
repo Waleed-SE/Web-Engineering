@@ -1,0 +1,5 @@
+section
+about me
+fav movies
+skills
+play song(then next song from sane player)

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREAT Website</title>
+  </head>
+  <body>
+    <h1>Hello Sir</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#aboutMe">AboutMe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>Say Something About Me</h2>
+      </section>
+      <section id="contact">
+        <form>
+          <label for="Name">Name</label><br />
+          <input type="text" required /><br />
+          <label for="Email">Email</label><br />
+          <input type="email" required /><br />
+          <label for="Number">Number</label><br />
+          <input type="number" /><br />
+          <label for="Message">Message</label><br />
+          <textarea name="Message" id="Message"></textarea><br />
+          <input type="button" value="Submit" />
+        </form>
+      </section>
+      <section id="AboutMe">
+        <h2>Favourite Movies</h2>
+        <ul>
+          <li>Harry Potter</li>
+          <li>Honeymoon</li>
+          <li>Carry On Jatta</li>
+        </ul>
+        <h2>Honeymoon Trailer</h2>
+        <video controls width="550">
+          <source src="Honeymoon.mp4" type="video/mp4" />
+
+          Download the
+          <a href="Honeymoon.mp4">MP4</a>
+          video.
+        </video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/26w8zdbgP2c?si=OJReqm0gNHLiPkcq"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2>Skills</h2>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Chess</li>
+          <li>Critical Thinking</li>
+          <li>No Skill</li>
+        </ul>
+        <!-- Audio Elements -->
+        <p id="songLabel">Current Song: </p>
+        <audio id="song" controls></audio>
+
+        <!-- JS code to handle the playback -->
+        <script>
+         var song = document.getElementById('song');
+         var tracks = ['song1.mp3', 'song2.mp3'];
+         var currentTrack = 0;
+         var songLabel = document.getElementById('songLabel');
+
+         song.src = tracks[currentTrack];
+         songLabel.textContent = 'Current Song: ' + tracks[currentTrack].substring(0, tracks[currentTrack].indexOf('.'));
+
+         song.addEventListener('ended', function() {
+          currentTrack = (currentTrack + 1) % tracks.length;
+          song.src = tracks[currentTrack];
+          songLabel.textContent = 'Current Song: ' + tracks[currentTrack];
+          song.play();
+         })
+         song.play();
+        </script>
+      </section>
+    </main>
+    <footer>Copyright@2025 All Rights Reserved 22F3674</footer>
+  </body>
+</html>
