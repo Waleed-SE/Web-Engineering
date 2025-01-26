@@ -9,10 +9,16 @@
     <h1 id="mainHeading">Hello Sir</h1>
     <header>
       <nav>
-        <ul  id="mainNavigition">
-          <li><h3><a href="#about">About</a></h3></li>
-          <li><h3><a href="#contact">Contact</a></h3></li>
-          <li><h3><a href="#aboutMe">About Me</a></h3></li>
+        <ul id="mainNavigition">
+          <li>
+            <h3><a href="#about">About</a></h3>
+          </li>
+          <li>
+            <h3><a href="#contact">Contact</a></h3>
+          </li>
+          <li>
+            <h3><a href="#aboutMe">About Me</a></h3>
+          </li>
         </ul>
       </nav>
     </header>
@@ -34,6 +40,18 @@
         </form>
       </section>
       <section id="aboutMe">
+        <h2>About Me</h2>
+        <img
+          src="profile.jpg"
+          width="250px"
+          height="250px"
+          style="border-radius: 50%"
+        />
+        <p>
+          My Name Is Muhammad Waleed, Currently Doing Bachelors in Software
+          Engineering From FAST CFD Campus.<br />I Love Doing Mind Tasks Like
+          Problem Solving, Chess etc. I Also Like To Play Competitive Games.
+        </p>
         <h2>Favourite Movies</h2>
         <ul>
           <li>Harry Potter</li>
@@ -67,25 +85,30 @@
           <li>No Skill</li>
         </ul>
         <!-- Audio Elements -->
-        <p id="songLabel">Current Song: </p>
+        <p id="songLabel">Current Song:</p>
         <audio id="song" controls></audio>
 
         <!-- JS Code to Handle the Playback and SongName-->
         <script>
-         var song = document.getElementById('song');
-         var tracks = ['song1.mp3', 'song2.mp3'];
-         var currentTrack = 0;
-         var songLabel = document.getElementById('songLabel');
+          var song = document.getElementById("song");
+          var tracks = ["song1.mp3", "song2.mp3"];
+          var currentTrack = 0;
+          var songLabel = document.getElementById("songLabel");
 
-         song.src = tracks[currentTrack];
-         songLabel.textContent = 'Current Song: ' + tracks[currentTrack].substring(0, tracks[currentTrack].indexOf('.'));
-
-         song.addEventListener('ended', function() {
-          currentTrack = (currentTrack + 1) % tracks.length;
           song.src = tracks[currentTrack];
-          songLabel.textContent = 'Current Song: ' + tracks[currentTrack];
-          song.play();
-         })
+          songLabel.textContent =
+            "Current Song: " +
+            tracks[currentTrack].substring(
+              0,
+              tracks[currentTrack].indexOf(".")
+            );
+
+          song.addEventListener("ended", function () {
+            currentTrack = (currentTrack + 1) % tracks.length;
+            song.src = tracks[currentTrack];
+            songLabel.textContent = "Current Song: " + tracks[currentTrack];
+            song.play();
+          });
         </script>
       </section>
     </main>
