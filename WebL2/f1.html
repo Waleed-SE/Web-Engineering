@@ -47,29 +47,39 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Mr%20FT%20FAISALABAD+(Demo)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
           <h1>Get Your Current Location</h1>
-    <p id="demo">Click the button to get your current location.</p>
-    <button onclick="getLocation()">Get Location</button>
+          <p id="demo">Click the button to get your current location.</p>
+          <button onclick="getLocation()">Get Location</button>
 
-    <script>
-        const x = document.getElementById("demo");
-        const y = document.getElementById("map");
+          <script>
+            const x = document.getElementById("demo");
+            const y = document.getElementById("map");
 
-        function getLocation() {
-            if (navigator.geolocation) {
+            function getLocation() {
+              if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
+              } else {
                 x.innerHTML = "Geolocation is not supported by this browser.";
+              }
             }
-        }
 
-        function showPosition(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude;
-            temp1="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
-            temp2="&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
-            y.src='https://maps.google.com/maps?q=' + position.coords.latitude + ',' + position.coords.longitude + '&t=&z=15&ie=UTF8&iwloc=&output=embed';
-        }
-    </script>
+            function showPosition(position) {
+              x.innerHTML =
+                "Latitude: " +
+                position.coords.latitude +
+                "<br>Longitude: " +
+                position.coords.longitude;
+              temp1 =
+                "https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
+              temp2 =
+                "&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
+              y.src =
+                "https://maps.google.com/maps?q=" +
+                position.coords.latitude +
+                "," +
+                position.coords.longitude +
+                "&t=&z=15&ie=UTF8&iwloc=&output=embed";
+            }
+          </script>
           <br />
           <input type="button" value="Submit" />
         </form>
