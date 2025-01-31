@@ -10,9 +10,17 @@ let person = {
   },
   //function
   displayPerson: function () {
-    console.log(this['name']);
+    console.log(this["name"]);
   },
 };
+
+function add1(...values) {
+  let result = 0;
+  for (let index = 0; index < values.length; index++) {
+    result += values[index];
+  }
+  return result;
+}
 
 Object.keys(person);
 Object.values(person);
@@ -36,8 +44,18 @@ person1["city"] = "Faisalabad";
 
 delete person1["city"];
 
-let currentStudent = {...person, class:"GOOOO"};
+let currentStudent = { ...person, class: "GOOOO" };
 Object.seal(person);
 Object.freeze(person);
+
+function createPerson(name, isStudent) {
+    this.name = name;
+    this.isStudent = isStudent;
+}
+
+person.prototype.semesterStart = true;
+person.prototype.greet = function () {
+    return `Hello ${this.name}`;
+}
 
 console.log("Hello");
