@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <label for="inputTask">Task Name: </label>
+    <input type="text" id="inputTask">
+    <input type="button" onclick="addTask()" value="Add Task" id="addTask">
+    <table id="taskTable">
+        <thead></thead>
+    </table>
+    <input class="deleteButton" type='button'>
+    <script>
+        function addTask() {
+            let taskTable = document.getElementById("taskTable");
+            let task = document.getElementById("inputTask").value;
+            let deleteIcon = "deleteIcon.jpg";
+            let deleteButton = "<input type='button' id='" + task + "Delete'><img width='30' length='30' src='" + deleteIcon + "'></input>";
+            taskTable.innerHTML += "<tr id='" + task + "'><td>" + task + "</td> <td> " + deleteButton + " </td> </tr>";
+        }
+    </script>
+</body>
+</html>

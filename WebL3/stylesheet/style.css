@@ -1,0 +1,15 @@
+.deleteButton {
+  position: relative;
+  padding-left: 25px;
+}
+
+.deleteButton::before {
+  content: "./deleteIcon.jpg";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 5px; /* Position the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
