@@ -1,0 +1,18 @@
+.faq-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+    font-weight: normal;
+    color: #555;
+    margin-top: 5px;
+}
+
+.faq-item:hover .answer {
+    display: block;
+}
