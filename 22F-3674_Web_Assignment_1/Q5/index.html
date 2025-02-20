@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Discount System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>E-Commerce Discount System</h2>
+
+        <label for="roll-number">Enter Roll Number:</label>
+        <input type="text" id="roll-number" placeholder="e.g., 21F-9445">
+        <button onclick="calculateDiscount()">Apply Discount</button>
+        <p id="discount-info">Discount: 0%</p>
+
+        <h3>Select Products:</h3>
+        <select id="product-dropdown">
+            <!-- Products will be added dynamically -->
+        </select>
+        <input type="number" id="product-quantity" min="1" value="1">
+        <button onclick="addToCart()">Add to Cart</button>
+
+        <h3>Cart</h3>
+        <ul id="cart-list"></ul>
+
+        <h3>Total Price: <span id="total-price">0 PKR</span></h3>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

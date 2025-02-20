@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Bank Account Simulation</h1>
+
+        <div id="account-info">
+            <label for="account-input"><strong>Enter Account Number:</strong></label>
+            <input type="text" id="account-input" placeholder="Roll No (XXF-XXXX)">
+            <button id="submit-account">Submit</button>
+            <p><strong>Account Number:</strong> <span id="account-number"></span></p>
+            <p id="p-initial-deposit"><strong>Initial Deposit:</strong> <span id="initial-deposit"></span> PKR</p>
+            <p><strong>Current Balance:</strong> <span id="balance"></span> PKR</p>
+        </div>
+
+        <form id="transaction-form">
+            <label for="transaction-type">Transaction Type:</label>
+            <select id="transaction-type">
+                <option value="deposit">Deposit</option>
+                <option value="withdrawal">Withdrawal</option>
+            </select>
+            
+            <label for="amount">Amount (PKR):</label>
+            <input type="number" id="amount" required>
+            
+            <button type="submit">Submit Transaction</button>
+        </form>
+
+        <h2>Transaction History</h2>
+        <ul id="transaction-history"></ul>
+        
+        <div class="button-container">
+            <button id="download-button">Download Transaction History</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
