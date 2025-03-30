@@ -1,0 +1,76 @@
+.book-session {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-session h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.book-session h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.book-session p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.book-session ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-session ul li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.book-session ul li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.book-session label {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.book-session button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.book-session button:hover {
+  background-color: #0056b3;
+}
+
+.book-session .confirmation-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #28a745; /* Success green color */
+  text-align: center;
+}

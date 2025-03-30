@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #007BFF, #6C63FF);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-y: auto; /* Enable scrolling for overflow content */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #444;
+}
+
+/* Dropdown Styling */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+select {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 90%;
+    max-width: 350px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Input Fields and Buttons */
+input[type="text"],
+input[type="number"],
+select,
+button {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 90%;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px; /* Prevent courses from overflowing */
+    overflow-y: auto; /* Enable scrolling for long lists */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+li {
+    background: #f8f8f8;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word; /* Prevent long text from breaking layout */
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    button {
+        font-size: 14px;
+    }
+
+    ul {
+        max-height: 200px; /* Adjust list height for smaller screens */
+    }
+}

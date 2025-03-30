@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/css/student/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <h1>Welcome, <span id="studentName"></span>!</h1>
+        <h2>Roll Number: <span id="studentRollNumber"></span></h2>
+      </header>
+
+      <!-- Registered Courses -->
+      <section id="registered-courses">
+        <h3>Your Registered Courses</h3>
+        <ul></ul>
+        <p id="noCoursesMessage" style="display: none">
+          You have not registered for any courses yet.
+        </p>
+      </section>
+
+      <!-- Passed Courses -->
+      <section id="passed-courses">
+        <h3>Your Passed Courses</h3>
+        <ul></ul>
+        <p id="noPassedCoursesMessage" style="display: none">
+          You have not completed any courses yet.
+        </p>
+      </section>
+
+      <!-- Available Courses -->
+      <section id="available-courses">
+        <h3>Available Courses</h3>
+        <ul></ul>
+        <p id="noAvailableCoursesMessage" style="display: none">
+          No courses available at the moment.
+        </p>
+      </section>
+
+      <button id="logoutButton">Logout</button>
+    </div>
+    <script src="/js/student/student.js"></script>
+  </body>
+</html>

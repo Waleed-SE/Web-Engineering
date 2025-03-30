@@ -1,0 +1,51 @@
+[
+    {
+      "code": "CS101",
+      "name": "Introduction to Computer Science",
+      "department": "Computer Science",
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "10:00 AM - 12:00 PM"
+      },
+      "prerequisites": [],
+      "availableSeats": 30,
+      "totalSeats": 30
+    },
+    {
+      "code": "CS102",
+      "name": "Data Structures",
+      "department": "Computer Science",
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "1:00 PM - 3:00 PM"
+      },
+      "prerequisites": ["CS101"],
+      "availableSeats": 25,
+      "totalSeats": 25
+    },
+    {
+      "code": "CS201",
+      "name": "Algorithms",
+      "department": "Computer Science",
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "2:00 PM - 4:00 PM"
+      },
+      "prerequisites": ["CS102"],
+      "availableSeats": 20,
+      "totalSeats": 20
+    },
+    {
+      "code": "CS301",
+      "name": "Operating Systems",
+      "department": "Computer Science",
+      "schedule": {
+        "days": ["Friday"],
+        "time": "9:00 AM - 12:00 PM"
+      },
+      "prerequisites": ["CS201"],
+      "availableSeats": 15,
+      "totalSeats": 15
+    }
+  ]
+  

@@ -1,0 +1,17 @@
+{
+    "person" : {
+        "name" : "Waleed",
+        "salary" : 20000,
+        "age" : 24
+    },
+    "2" : {
+        "name" : "Taqi",
+        "salary" : 20000,
+        "age" : 24
+    },
+    "3" : {
+        "name" : "Abdullah",
+        "salary" : 20000,
+        "age" : 24
+    }
+}

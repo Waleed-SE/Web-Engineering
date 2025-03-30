@@ -1,0 +1,50 @@
+[
+  {
+    "courseCode": "CS101",
+    "title": "Introduction to Programming",
+    "department": "Computer Science",
+    "level": 1,
+    "schedule": {
+      "days": ["Monday", "Wednesday"],
+      "time": "10:00 AM - 11:30 AM"
+    },
+    "seatsAvailable": 50,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "CS102",
+    "title": "Data Structures",
+    "department": "Computer Science",
+    "level": 2,
+    "schedule": {
+      "days": ["Tuesday", "Thursday"],
+      "time": "12:00 PM - 1:30 PM"
+    },
+    "seatsAvailable": 40,
+    "prerequisites": ["CS101"]
+  },
+  {
+    "courseCode": "MATH101",
+    "title": "Calculus I",
+    "department": "Mathematics",
+    "level": 1,
+    "schedule": {
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time": "8:00 AM - 9:30 AM"
+    },
+    "seatsAvailable": 30,
+    "prerequisites": []
+  },
+  {
+    "courseCode": "ENG201",
+    "title": "English Literature",
+    "department": "Humanities",
+    "level": 2,
+    "schedule": {
+      "days": ["Tuesday", "Thursday"],
+      "time": "2:00 PM - 3:30 PM"
+    },
+    "seatsAvailable": 25,
+    "prerequisites": []
+  }
+]

@@ -1,0 +1,198 @@
+/* Overall Dashboard Styling */
+.session-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.session-dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.session-dashboard button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.session-dashboard button:hover {
+  background-color: #005a9e;
+}
+
+.view-toggle button {
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #e81123; /* Red for danger actions */
+}
+
+.delete-btn:hover {
+  background-color: #c5101b;
+}
+
+/* Calendar View Styling */
+.react-calendar {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__tile:enabled:hover {
+  background-color: #d6e4ff;
+}
+
+/* List View Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+table button {
+  margin-right: 5px;
+}
+
+/* Status Filter Styling */
+.status-filter {
+  margin-top: 20px;
+}
+
+.status-filter label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.status-filter select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Pending Session Tile */
+.react-calendar__tile.pending-session {
+  background-color: #ffcc00; /* Yellow for pending sessions */
+  color: #000; /* Black text for contrast */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Completed Session Tile */
+.react-calendar__tile.completed-session {
+  background-color: #00cc66; /* Green for completed sessions */
+  color: #fff; /* White text for contrast */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.react-calendar__tile:enabled:hover {
+  background-color: #d6e4ff; /* Light blue hover */
+}
+
+/* Session Actions Styling */
+.session-actions button {
+  margin-right: 5px;
+}
+.delete-btn {
+  background-color: #e81123; /* Red for cancellation */
+}
+
+.delete-btn:hover {
+  background-color: #c5101b;
+}
+
+/* Modal Wrapper */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; /* Allow scrolling if content exceeds window height */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px; /* Adjust width as needed */
+  width: 90%; /* Responsive width */
+  max-height: 90vh; /* Limit content height to viewport */
+  overflow-y: auto; /* Enable scrolling for the modal's content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+/* Session Actions */
+.session-actions button {
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #e81123; /* Red for cancellation */
+}
+
+.delete-btn:hover {
+  background-color: #c5101b;
+}
+
+.new-booking-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.new-booking-button:hover {
+  background-color: #45a049;
+}

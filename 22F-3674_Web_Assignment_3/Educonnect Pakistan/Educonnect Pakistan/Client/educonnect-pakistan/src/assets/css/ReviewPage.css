@@ -1,0 +1,37 @@
+.review-page {
+  padding: 20px;
+}
+
+.session-list {
+  list-style: none;
+  padding: 0;
+}
+
+.session-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.review-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.review-button,
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

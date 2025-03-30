@@ -1,0 +1,31 @@
+.default-cursor {
+    cursor: default;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.crosshair-cursor {
+    cursor: crosshair;
+}
+
+.custom-cursor {
+    cursor: url('path/to/custom-cursor.png'), auto;
+}
+
+/* <div id="myElement">Hover over me!</div>
+<button id="changeCursorBtn">Change Cursor</button>
+#myElement {
+    width: 200px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+document.getElementById('changeCursorBtn').addEventListener('click', function() {
+    var element = document.getElementById('myElement');
+    element.style.cursor = 'crosshair'; // Change to crosshair cursor
+}); */

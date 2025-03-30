@@ -1,0 +1,33 @@
+.wishlist-page {
+  padding: 20px;
+}
+
+.wishlist-list {
+  list-style: none;
+  padding: 0;
+}
+
+.wishlist-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.wishlist-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #cc0000;
+}

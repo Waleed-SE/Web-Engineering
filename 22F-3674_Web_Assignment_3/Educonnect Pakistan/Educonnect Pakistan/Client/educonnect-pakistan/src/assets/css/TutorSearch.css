@@ -1,0 +1,30 @@
+.tutor-search {
+  padding: 20px;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.tutor-list {
+  margin-top: 30px;
+}
+
+.tutor-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.wishlist-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wishlist-button:hover {
+  background-color: #0056b3;
+}

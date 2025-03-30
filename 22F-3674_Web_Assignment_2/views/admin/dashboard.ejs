@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/admin/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome, Admin</h1>
+
+        <!-- Dropdown to Select Functionality -->
+        <label for="functionSelect">Choose Function:</label>
+        <select id="functionSelect">
+            <option value="">-- Select an Option --</option>
+            <option value="manageCourses">Manage Courses</option>
+            <option value="addCourse">Add New Course</option>
+            <option value="manageStudents">Manage Students</option>
+            <option value="overrideRegistration">Override Registration</option>
+        </select>
+
+        <!-- Manage Courses Section -->
+        <section id="manageCourses" class="hidden">
+            <h2>Manage Courses</h2>
+            <input type="text" id="courseFilter" placeholder="Search courses..." />
+            <ul id="courseList"></ul>
+        </section>
+
+        <!-- Add New Course Section -->
+        <section id="addCourse" class="hidden">
+            <h2>Add New Course</h2>
+            <form id="addCourseForm">
+                <label for="courseCode">Course Code:</label>
+                <input type="text" id="courseCode" placeholder="Course Code" required />
+            
+                <label for="courseTitle">Course Title:</label>
+                <input type="text" id="courseTitle" placeholder="Course Title" required />
+            
+                <label for="courseSeats">Total Seats:</label>
+                <input type="number" id="courseSeats" placeholder="Total Seats" required />
+            
+                <label for="courseDepartment">Department:</label>
+                <input type="text" id="courseDepartment" placeholder="Department" required />
+            
+                <label for="courseLevel">Level:</label>
+                <input type="number" id="courseLevel" placeholder="Level (e.g., 1, 2, 3)" required />
+            
+                <label for="coursePrerequisites">Prerequisites:</label>
+                <select id="coursePrerequisites" multiple>
+                    <!-- Dynamically populated -->
+                </select>
+            
+                <button type="submit">Add Course</button>
+            </form>
+            
+        </section>
+
+        <!-- Manage Students Section -->
+        <section id="manageStudents" class="hidden">
+            <h2>Manage Students</h2>
+            <ul id="studentList"></ul>
+        </section>
+
+        <!-- Override Registration Section -->
+        <section id="overrideRegistration" class="hidden">
+            <h2>Override Registration</h2>
+            <form id="overrideRegistrationForm">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" placeholder="Student ID" required>
+
+                <label for="courseId">Course ID:</label>
+                <input type="text" id="courseId" placeholder="Course ID" required>
+
+                <button type="submit">Override Registration</button>
+            </form>
+        </section>
+
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="/js/admin/admin.js"></script>
+</body>
+</html>

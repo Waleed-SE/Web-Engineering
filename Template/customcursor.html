@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellipse Cursor</title>
+    <style>
+      body {
+        cursor: none;
+      }
+
+      .ellipse-cursor {
+        position: fixed;
+        width: 50px; /* Adjust the size of the ellipse */
+        height: 30px; /* Adjust the size of the ellipse */
+        background-color: rgba(0, 0, 0, 0.5); /* Color and transparency */
+        border-radius: 50% 25%; /* Create an ellipse shape */
+        pointer-events: none;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ellipse-cursor"></div>
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        const cursor = document.querySelector(".ellipse-cursor");
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
+    </script>
+  </body>
+</html>
